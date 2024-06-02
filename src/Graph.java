@@ -153,7 +153,7 @@ public class Graph {
         }
         String resultPath = path.toString();
 
-        // 将结果写入名为 random.txt 的文件中
+        // 将结果写入名为 random.txt 的文件中，启动！
         try (FileWriter writer = new FileWriter("random.txt")) {
             writer.write(resultPath);
         } catch (IOException e) {
