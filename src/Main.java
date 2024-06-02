@@ -7,7 +7,11 @@ import java.util.Scanner;
 public class Main {
     private static Graph graph;
 
+<<<<<<< HEAD
     // 定义一个内部静态类用于全局标志,启动吗？
+=======
+    // 定义一个内部静态类用于全局标志,启动！
+>>>>>>> C4
     public static class GlobalFlags {
         // 声明一个静态标志变量
         public static int flag = 0;
