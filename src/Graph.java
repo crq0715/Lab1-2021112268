@@ -128,7 +128,7 @@ public class Graph {
         return "Shortest path from " + word1 + " to " + word2 + " is: " + path.toString().trim() + ". Path length: " + distances.get(word2) + ".";
     }
 
-    // 随机游走方法，从图中的一个随机顶点开始，随机选择一条边走下去
+    // 随机游走方法，从图中的一个随机顶点开始，随机选择一条边走下去，原神，启动！
     public String randomWalk() {
         Random random = new Random();
         List<String> vertices = new ArrayList<>(adjList.keySet());
@@ -153,7 +153,7 @@ public class Graph {
         }
         String resultPath = path.toString();
 
-        // 将结果写入名为 random.txt 的文件中
+        // 将结果写入名为 random.txt 的文件中，原神，启动！
         try (FileWriter writer = new FileWriter("random.txt")) {
             writer.write(resultPath);
         } catch (IOException e) {
