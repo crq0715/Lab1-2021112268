@@ -32,6 +32,11 @@ public class Graph {
     public Map<String, Map<String, Integer>> getAdjList() {
         return adjList;
     }
+    public void setAdjList(Map<String, Map<String, Integer>> adjList) {
+        this.adjList.clear();
+        this.adjList.putAll(adjList);
+    }
+
 
     // 查询桥接词的方法，即在 word1 和 word2 之间存在的中间词
     public String queryBridgeWords(String word1, String word2) {

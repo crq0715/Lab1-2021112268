@@ -73,7 +73,7 @@ public class GraphPanel extends JPanel {
             String node = entry.getKey();
             Point pos = entry.getValue();
             // 绘制节点为圆形
-            g2d.fillOval(pos.x - 10, pos.y - 10, 20, 20);
+            g2d.fillOval(pos.x - 10, pos.y - 10, 10, 10);
             // 在节点旁边绘制节点名称
             g2d.drawString(node, pos.x - 10, pos.y - 15);
         }
